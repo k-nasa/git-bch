@@ -18,3 +18,14 @@ fn main() {
 
     println!("{:?}", output_branch);
 }
+
+struct BranchTree {
+    branches: Vec<String>,
+    node: Vec<BranchNode>,
+}
+
+struct BranchNode {
+    name: String,
+    branches: Vec<String>,
+    node: Vec<BranchNode>,
+}
